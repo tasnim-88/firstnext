@@ -12,6 +12,9 @@ export default function Navbar() {
 
     const links = <>
         <li><Link href={'/'}>Home</Link></li>
+        <li><Link href={'/products'}>Products</Link></li>
+        <li><Link href={'/addproducts'}>Add Products</Link></li>
+        <li><Link href={'/manageproducts'}>Manage Products</Link></li>
         <li><Link href={'/about'}>About us</Link></li>
     </>
     return (
@@ -40,10 +43,10 @@ export default function Navbar() {
                         <>
                             <div className="flex items-center space-x-4">
                                 <p>Welcome, {session.user.name}</p>
-                                <button className='btn' onClick={() => signOut()}>Sign Out</button>
+                                <button className='btn bg-blue-600 hover:bg-blue-700 text-white' onClick={() => signOut()}>Sign Out</button>
                             </div>
                         </> :
-                        <Link href='/login' className="btn">Login</Link>
+                        <Link href='/login' className="btn bg-blue-600 hover:bg-blue-700 text-white">Login</Link>
                 }
             </div>
         </div>
