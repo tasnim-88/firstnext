@@ -22,9 +22,9 @@ export default async function ManageProducts() {
           <tr>
             <th>No</th>
             <th>Product</th>
+            <th>Status</th>
             <th>Price</th>
             <th>Actions</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -47,6 +47,7 @@ export default async function ManageProducts() {
                   </div>
                 </div>
               </td>
+              <td className='badge badge-success'>{p.status}</td>
               <td>${p.price}</td>
               <td>
                 <Link href={`/productdetails/${p._id}`} className="btn btn-ghost btn-xs"><FaRegEye size={20} /></Link>
