@@ -30,7 +30,7 @@ export default async function ProductDetails({ params }) {
 
             {/* Description */}
             <p className="text-gray-600 leading-relaxed mb-4">
-                {product.description}
+                {product.fullDesc}
             </p>
 
             {/* Info Rows */}

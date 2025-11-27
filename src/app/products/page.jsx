@@ -84,7 +84,7 @@ export default async function Products() {
                                 {product.title}
                             </h3>
                             <p className="mt-2 text-sm text-muted-foreground flex-1">
-                                {product.description}
+                                {product.shortDesc}
                             </p>
                             <p className="mt-4 text-2xl font-bold text-primary">
                                 ${product.price.toFixed(2)}
