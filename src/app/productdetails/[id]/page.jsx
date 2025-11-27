@@ -50,7 +50,7 @@ export default async function ProductDetails({ params }) {
                         <span className="text-emerald-600 text-lg">📅</span>
                         <span className="text-gray-600">Date Added</span>
                     </div>
-                    <span className="font-medium">October 26, 2023</span>
+                    <span className="font-medium">{product.createdAt}</span>
                 </div>
 
                 {/* Status */}
