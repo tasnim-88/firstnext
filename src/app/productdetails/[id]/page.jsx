@@ -59,7 +59,7 @@ export default async function ProductDetails({ params }) {
                         <span className="text-emerald-600 text-lg">📦</span>
                         <span className="text-gray-600">Status</span>
                     </div>
-                    <span className="font-medium text-emerald-700">In Stock</span>
+                    <span className="font-medium text-emerald-700">{product.status}</span>
                 </div>
             </div>
             <BackButton></BackButton>
