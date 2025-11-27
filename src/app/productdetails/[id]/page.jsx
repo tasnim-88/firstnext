@@ -5,7 +5,7 @@ import React from 'react'
 export default async function ProductDetails({ params }) {
 
     const { id } = await params
-    const res = await fetch(`http://localhost:3001/products/${id}`, {
+    const res = await fetch(`https://nextmart-livid.vercel.app/products/${id}`, {
         cache: "no-store"
     })
     const product = await res.json()

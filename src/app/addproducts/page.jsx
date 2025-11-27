@@ -18,7 +18,7 @@ export default function AddProducts() {
       image: e.target.image.value,
     };
 
-    const res = await fetch("http://localhost:3001/products", {
+    const res = await fetch("https://nextmart-livid.vercel.app/products", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

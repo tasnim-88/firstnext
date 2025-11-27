@@ -3,7 +3,7 @@ import React from 'react'
 
 export default async function FeaturedProducts() {
 
-    const res = await fetch('http://localhost:3001/products', {
+    const res = await fetch('https://nextmart-livid.vercel.app/products', {
         cache: "no-store"
     })
     const products = await res.json()

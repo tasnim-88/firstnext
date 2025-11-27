@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export default function DeleteButton({ id, onDeleted }) {
     const handleDelete = async () => {
         try {
-            const res = await fetch(`http://localhost:3001/products/${id}`, {
+            const res = await fetch(`https://nextmart-livid.vercel.app/products/${id}`, {
                 method: "DELETE",
             });
 
